@@ -1,0 +1,23 @@
+name: Python CI
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches: '*'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - uses: wagoid/commitlint-github-action@v2
+      - name: Install dependencies
+        run: |
+          python3 -m pip install --upgrade pip
+          pip install marko bs4
+      - name: Parse README
+        run: python3 parser.py
