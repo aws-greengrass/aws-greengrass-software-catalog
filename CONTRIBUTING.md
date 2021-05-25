@@ -7,17 +7,12 @@ Please read through this document before submitting any issues or pull requests 
 information to effectively respond to your bug report or contribution.
 
 
-## Reporting Bugs/Feature Requests
+## Application/Enhancement Requests
 
-We welcome you to use the GitHub issue tracker to report bugs or suggest features.
+We welcome you to use the GitHub issue tracker to suggest applications or enhancements.
 
 When filing an issue, please check existing open, or recently closed, issues to make sure somebody else hasn't already
-reported the issue. Please try to include as much information as you can. Details like these are incredibly useful:
-
-* A reproducible test case or series of steps
-* The version of our code being used
-* Any modifications you've made relevant to the bug
-* Anything unusual about your environment or deployment
+reported the issue. Please try to include as much information as you can.
 
 
 ## Contributing via Pull Requests
