@@ -1,7 +1,6 @@
 ## PR Checklist
 - [ ] Review the [guidelines for contributing](../CONTRIBUTING.md) to this repository.
-- [ ] Check the commit's or even all commits' message styles matches [conventional commit format](https://conventionalcommits.org).
-- [ ] Check your code additions don't fail the automated CI validation.
+- [ ] Check your code additions and commit messages don't fail the automated CI validation.
 - [ ] Fill in the requested information in all the following sections.
 
 ## Description
@@ -15,6 +14,10 @@
 <!--- Instructions can include a script that installs and runs some -->
 <!--- examples which can be manually verified, manual user scripts, -->
 <!--- or instructions to invoke any integration tests. -->
+
+## Threat Modeling
+<!--- List any potential security vulnerabilities for this -->
+<!--- application and how you've attempted to mitigate risks. -->
 
 ## Acceptance Criteria
 Make sure your application home contains:
