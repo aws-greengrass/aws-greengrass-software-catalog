@@ -1,31 +1,33 @@
-# Greengrass App Repository
+# Greengrass Community - Catalog
 
-A curated list of Greengrass Applications.
+This catalog consists of contributions made by Greengrass community in the form of applications, frameworks and tools. 
 
-- [Greengrass Applications](#greengrass-applications)
-    - [Development](#development)
-- [Resources](#resources)
-    - [Blogs](#blogs)
-    - [Templates](#templates)
+- [Catalog](#catalog)
+    - [Applications](#applications)
+    - [Frameworks](#frameworks)
+    - [Tools](#tools)
 - [Contributing](#contributing)
 - [License](#license)
 
----
+## Catalog
 
-## Greengrass Applications
+### Applications
 
-### Development
+_Applications that help you leverage Greengrass capabilties at the edge._
 
-_Tools that help in development environments._
+- [Placeholder](https://github.com/aws-greengrass/) - This application helps to leverage Greengrass capabilties at the edge.
 
-- [AWS Greengrass CLI](https://github.com/aws-greengrass/aws-greengrass-cli) - The Greengrass CLI component provides a local command-line interface that you can use on Greengrass core devices to develop and debug components locally.
-- [AWS IoT Greengrass LocalDebugConsole](https://github.com/aws-greengrass/aws-greengrass-localdebugconsole) - The local debug console component provides a local dashboard that displays information about your Greengrass core device and its components.
+### Frameworks
 
-## Resources
+_Frameworks that help you focus on application specific logic rather than re-inventing the wheels._
 
-### Blogs
+- [Placeholder](https://github.com/aws-greengrass/) - This framework helps to focus on application specific logic rather than re-inventing the wheels.
 
-### Templates
+### Tools
+
+_Tools that help you accelerate the development of Greengrass applications._
+
+- [Placeholder](https://github.com/aws-greengrass/) - This tool helps with the development of greengrass applications.
 
 ## Contributing
 
@@ -34,4 +36,3 @@ See [CONTRIBUTING](CONTRIBUTING.md#security-issue-notifications) for more inform
 ## License
 
 This project is licensed under the Apache-2.0 License.
-

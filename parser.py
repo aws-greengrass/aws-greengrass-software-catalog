@@ -6,7 +6,7 @@ import sys
 def parse_apps_list(heading):
     """
     Verifies that apps list is in following format:
-    <h2>Greengrass Applications</h2>
+    <h2>Catalog</h2>
     <h3>{category name}</h3>
     <p>{category description}</p>
     <ul>
@@ -25,19 +25,13 @@ def parse_apps_list(heading):
 
     while curr_elem.name != 'h2':
         if curr_elem.name == 'h3':
-            if prev_elem_name != 'ul':
-                return False
-            if not curr_elem.text:
+            if prev_elem_name != 'ul' or not curr_elem.text:
                 return False
         elif curr_elem.name == 'p':
-            if prev_elem_name != 'h3':
-                return False
-            if not curr_elem.text:
+            if prev_elem_name != 'h3' or not curr_elem.text:
                 return False
         elif curr_elem.name == 'ul':
-            if prev_elem_name != 'p':
-                return False
-            if not parse_apps_list_per_category(curr_elem):
+            if prev_elem_name != 'p' or not parse_apps_list_per_category(curr_elem):
                 return False
         else:
             return False
@@ -69,19 +63,29 @@ def parse_apps_list_per_category(ul_elem):
             app_name = next_elem.text
             if not app_name:
                 return False
-            app_description = child.text.replace(app_name, '')
+            app_description = child.text.replace(app_name, '').replace(' ','')
             if not app_description:
                 return False
     return True
 
-
+example_format = """
+    ## Catalog
+    ### Category name - 1
+    _Category description_
+    - [contribution-1-name](contribution-1-link) - contribution-1 description
+    - [contribution-2-name](contribution-2-link) - contribution-2 description
+    ### Category name - 2
+    _Category description_
+    - [contribution-1-name](contribution-1-link) - contribution-1 description
+    - [contribution-2-name](contribution-2-link) - contribution-2 description
+    """
 if __name__ == "__main__":
     with open('README.md', 'r') as read_me_file:
         read_me = read_me_file.read()
 
     html = gfm(read_me)
     soup = BeautifulSoup(html, 'html.parser')
-    gg_apps_heading = soup.find('h2', string='Greengrass Applications')
+    gg_catalog_heading = soup.find('h2', string='Catalog')
 
-    if not parse_apps_list(gg_apps_heading):
-        sys.exit('Invalid README structure')
+    if not parse_apps_list(gg_catalog_heading):
+        sys.exit('README Structure is invalid. Please update the README to match the following format.\n{}'.format(example_format))
