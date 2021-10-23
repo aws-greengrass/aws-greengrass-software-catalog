@@ -1,6 +1,7 @@
-from marko.ext.gfm import gfm
-from bs4 import BeautifulSoup
 import sys
+
+from bs4 import BeautifulSoup
+from marko.ext.gfm import gfm
 
 
 def parse_apps_list(heading):
@@ -21,17 +22,17 @@ def parse_apps_list(heading):
         return False
 
     curr_elem = heading.find_next_sibling()
-    prev_elem_name = 'ul'
+    prev_elem_name = "ul"
 
-    while curr_elem.name != 'h2':
-        if curr_elem.name == 'h3':
-            if prev_elem_name != 'ul' or not curr_elem.text:
+    while curr_elem.name != "h2":
+        if curr_elem.name == "h3":
+            if prev_elem_name != "ul" or not curr_elem.text:
                 return False
-        elif curr_elem.name == 'p':
-            if (prev_elem_name != 'h3' and curr_elem.name != 'p') or not curr_elem.text:
+        elif curr_elem.name == "p":
+            if (prev_elem_name != "h3" and curr_elem.name != "p") or not curr_elem.text:
                 return False
-        elif curr_elem.name == 'ul':
-            if prev_elem_name != 'p' or not parse_apps_list_per_category(curr_elem):
+        elif curr_elem.name == "ul":
+            if prev_elem_name != "p" or not parse_apps_list_per_category(curr_elem):
                 return False
         else:
             return False
@@ -39,7 +40,7 @@ def parse_apps_list(heading):
         prev_elem_name = curr_elem.name
         curr_elem = curr_elem.find_next_sibling()
 
-    if prev_elem_name != 'ul':
+    if prev_elem_name != "ul":
         return False
 
     return True
@@ -58,15 +59,16 @@ def parse_apps_list_per_category(ul_elem):
     for child in ul_elem.childGenerator():
         if child.name:
             next_elem = child.find_next()
-            if next_elem.name != 'a':
+            if next_elem.name != "a":
                 return False
             app_name = next_elem.text
             if not app_name:
                 return False
-            app_description = child.text.replace(app_name, '').replace(' ','')
+            app_description = child.text.replace(app_name, "").replace(" ", "")
             if not app_description:
                 return False
     return True
+
 
 example_format = """
     ## Catalog
@@ -80,12 +82,14 @@ example_format = """
     - [contribution-2-name](contribution-2-link) - contribution-2 description
     """
 if __name__ == "__main__":
-    with open('README.md', 'r') as read_me_file:
+    with open("README.md", "r") as read_me_file:
         read_me = read_me_file.read()
 
     html = gfm(read_me)
-    soup = BeautifulSoup(html, 'html.parser')
-    gg_catalog_heading = soup.find('h2', string='Catalog')
+    soup = BeautifulSoup(html, "html.parser")
+    gg_catalog_heading = soup.find("h2", string="Catalog")
 
     if not parse_apps_list(gg_catalog_heading):
-        sys.exit('README Structure is invalid. Please update the README to match the following format.\n{}'.format(example_format))
+        sys.exit(
+            "README Structure is invalid. Please update the README to match the following format.\n{}".format(example_format)
+        )

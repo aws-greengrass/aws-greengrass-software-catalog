@@ -18,6 +18,8 @@ jobs:
       - name: Install dependencies
         run: |
           python3 -m pip install --upgrade pip
-          pip install marko bs4
+          pip3 install marko bs4 requests
       - name: Parse README
-        run: python3 parser.py
+        run: python3 workflow-scripts/readme_parser.py
+      - name: Validate components list
+        run: python3 workflow-scripts/component_list_validator.py
