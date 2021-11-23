@@ -28,7 +28,7 @@ def parse_apps_list(heading):
             if prev_elem_name != 'ul' or not curr_elem.text:
                 return False
         elif curr_elem.name == 'p':
-            if prev_elem_name != 'h3' or not curr_elem.text:
+            if (prev_elem_name != 'h3' and curr_elem.name != 'p') or not curr_elem.text:
                 return False
         elif curr_elem.name == 'ul':
             if prev_elem_name != 'p' or not parse_apps_list_per_category(curr_elem):
