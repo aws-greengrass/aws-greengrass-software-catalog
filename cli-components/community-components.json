@@ -1,0 +1,5 @@
+{
+    "aws-greengrass-labs-database-influxdb": "https://github.com/awslabs/aws-greengrass-labs-database-influxdb/archive/refs/heads/main.zip",
+    "aws-greengrass-labs-telemetry-influxdbpublisher": "https://github.com/awslabs/aws-greengrass-labs-telemetry-influxdbpublisher/archive/refs/heads/main.zip",
+    "aws-greengrass-labs-dashboard-grafana": "https://github.com/awslabs/aws-greengrass-labs-dashboard-grafana/archive/refs/heads/main.zip"
+}
