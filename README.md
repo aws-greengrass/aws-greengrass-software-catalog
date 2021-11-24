@@ -1,38 +1,70 @@
-# Greengrass Community - Catalog
+# Greengrass Software Catalog
 
-This catalog consists of contributions made by Greengrass community in the form of applications, frameworks and tools. 
+The Greengrass Software Catalog is an index of Greengrass components that are developed by the Greengrass community. Build your edge applications faster by using this catalog to find pre-built components that best fit your use-case.
 
 - [Catalog](#catalog)
-    - [Applications](#applications)
-    - [Frameworks](#frameworks)
+    - [Community components](#community-components)
+    - [AWS provided components](#aws-provided-components)
+- [Resources](#resources)
     - [Tools](#tools)
-- [Contributing](#contributing)
+    - [Documentation](#documentation)
 - [License](#license)
 
 ## Catalog
 
-### Applications
+### Community components
 
-_Applications that help you leverage Greengrass capabilties at the edge._
+The Greengrass developer community builds and maintains components that you can deploy to your devices. Instead of building components for each required capability, you can choose components from the catalog to kick-start your IoT project. Since these components are a reference implementation of common patterns, please ensure that you appropriately review and test any functionality before deploying it to your production environments.
 
-- [Placeholder](https://github.com/aws-greengrass/) - This application helps to leverage Greengrass capabilties at the edge.
+To request a feature or report a bug, open a GitHub issue on the repository for that component. Note: AWS does not guarantee support for the community components. Please check the corresponding CONTRIBUTING file for details.
 
-### Frameworks
+Following is a list of Greengrass components.
+* [Bluetooth IoT Gateway](https://github.com/awslabs/aws-greengrass-labs-bluetooth-gateway): The BLE IoT Gateway component uses the [BluePy](https://ianharvey.github.io/bluepy-doc/index.html) library (Python module which allows communication with Bluetooth Low Energy devices) to create the BLE client interface.
+* [Grafana](https://github.com/awslabs/aws-greengrass-labs-dashboard-grafana): This component provides support for the Grafana visualization dashboard at the edge. Customers can use this component to visualize data locally. This component can be used to render data from the InfluxDB component.
+* [Home Assistant](https://github.com/awslabs/aws-greengrass-labs-component-for-home-assistant): This component enables use cases where the customer desires [Home Assistant](https://www.home-assistant.io/) for local control of their smart home devices. This component enables deep integration with AWS services at the edge and in the cloud, to deliver powerful home automation solutions that extend Home Assistant’s capabilities.
+* [InfluxDB](https://github.com/awslabs/aws-greengrass-labs-database-influxdb): This component provides support for [InfluxDB](https://www.influxdata.com/products/influxdb/) time-series database at the edge. Customers can use this component to support processing data from IoT sensors, carry out real-time analytics and monitor edge operations.
+* [InfluxDB Publisher](https://github.com/awslabs/aws-greengrass-labs-telemetry-influxdbpublisher): This component relays Greengrass System Health Telemetry from the [Nucleus emitter plugin](https://github.com/aws-greengrass/aws-greengrass-telemetry-nucleus-emitter) to InfluxDB. You can also use this component to forward custom telemetry to InfluxDB.
+* [IoT PubSub Framework](https://github.com/aws-samples/aws-greengrass-application-framework): This framework provides an application architecture, template code and deploy-able examples to improve code quality and velocity for distributed event-driven IoT PubSub applications using [AWS Greengrass V2 custom components](https://docs.aws.amazon.com/greengrass/v2/developerguide/create-components.html).
+* [Kinesis Video Streams](https://github.com/awslabs/aws-greengrass-labs-kvs-stream-uploader): This component ingests audio and video streams from RTSP cameras connected to the Greengrass core device. The audio and video streams are then uploaded to Amazon Kinesis Video Streams.
+* [Local Webserver](https://github.com/awslabs/aws-greengrass-labs-local-web-server): This component enable users to create local web user interface on a Greengrass core device. The web user interface can be used to configure device and application settings, or monitoring the device.
+* [LoRaWAN](https://github.com/awslabs/aws-greengrass-labs-component-for-the-things-stack-lorawan): This component enables ingestion of data from LoRaWAN-connected, low-power devices so customers can get insights from data and take action locally without connecting to the cloud.
+* [Modbus TCP](https://github.com/awslabs/aws-greengrass-labs-modbus-tcp-protocol-adapter): This component collects data from local devices through the ModbusTCP protocol and publishes it to selected data streams.
+* [WebRTC](https://github.com/awslabs/aws-greengrass-labs-webrtc): This component ingests audio and video streams from RTSP cameras connected to the Greengrass core device. And then the component turns the audio and video streams into peer-to-peer communication or relay through Amazon Kinesis Video Streams.
 
-_Frameworks that help you focus on application specific logic rather than re-inventing the wheels._
+### AWS provided components
 
-- [Placeholder](https://github.com/aws-greengrass/) - This framework helps to focus on application specific logic rather than re-inventing the wheels.
+AWS IoT Greengrass provides and maintains components that you can deploy to your devices. Below is the list of open source AWS-provided components. You can find the full list of components in the [AWS IoT Greengrass Developer Guide](https://docs.aws.amazon.com/greengrass/v2/developerguide/public-components.html). Use the Greengrass console or API to deploy these components to your Greengrass core devices.
+
+* [Greengrass nucleus](https://github.com/aws-greengrass/aws-greengrass-nucleus): The Greengrass nucleus component is a mandatory component and the minimum requirement to run the AWS IoT Greengrass Core software on a device.
+* [Client device auth](https://github.com/aws-greengrass/aws-greengrass-client-device-auth): The client device auth component authenticates client devices and authorizes client device actions.
+* [CloudWatch metrics](https://github.com/aws-greengrass/aws-greengrass-cloudwatch-metrics): The Amazon CloudWatch metrics component publishes custom metrics from Greengrass core devices to Amazon CloudWatch.
+* [Device Defender](https://github.com/aws-greengrass/aws-greengrass-device-defender): The Device Defender component notifies administrators about changes in the state of Greengrass core devices.
+* [Docker application manager](https://github.com/aws-greengrass/aws-greengrass-nucleus/tree/main/src/main/java/com/aws/greengrass/componentmanager/plugins/docker): The Docker application manager component enables AWS IoT Greengrass to download Docker images from public image registries. This component is built into the Greengrass nucleus.
+* [Greengrass CLI](https://github.com/aws-greengrass/aws-greengrass-cli): The Greengrass CLI component provides a local command-line interface that you can use on core devices to develop and debug components locally.
+* [IP detector](https://github.com/aws-greengrass/aws-greengrass-ip-detector): The IP detector component monitors the Greengrass core device's network connectivity information and updates the core device's connectivity information in the AWS IoT Greengrass cloud service.
+* [Lambda manager](https://github.com/aws-greengrass/aws-greengrass-lambda-manager): The Lambda manager component manages work items and interprocess communication for AWS Lambda functions that run on the Greengrass core device.
+* [Local debug console](https://github.com/aws-greengrass/aws-greengrass-localdebugconsole): The local debug console component provides a local dashboard that displays information about your AWS IoT Greengrass core devices and its components. You can use this dashboard to debug your core device and manage local components.
+* [Log manager](https://github.com/aws-greengrass/aws-greengrass-log-manager): The log manager component uploads logs from AWS IoT Greengrass core devices to Amazon CloudWatch Logs. You can upload logs from the Greengrass nucleus, other Greengrass components, and other applications and services that aren't Greengrass components.
+* [MQTT bridge](https://github.com/aws-greengrass/aws-greengrass-mqtt-bridge): The MQTT bridge component relays MQTT messages between client devices, local Greengrass publish/subscribe, and AWS IoT Core. You can use this component to act on MQTT messages from client devices in custom components and sync client devices with the AWS Cloud.
+* [MQTT broker (Moquette)](https://github.com/aws-greengrass/aws-greengrass-moquette-mqtt): The Moquette MQTT broker component handles MQTT messages between client devices and a Greengrass core device. This component provides a modified version of the Moquette MQTT broker (https://github.com/moquette-io/moquette).
+* [Nucleus telemetry emitter](https://github.com/aws-greengrass/aws-greengrass-telemetry-nucleus-emitter): The nucleus emitter component gathers system health telemetry data and publishes it continually to a local topic and an AWS IoT Core MQTT topic. This component enables you to gather real-time system telemetry on your Greengrass core devices.
+* [Secret manager](https://github.com/aws-greengrass/aws-greengrass-secret-manager) The secret manager component deploys secrets from AWS Secrets Manager to Greengrass core devices. Use this component to securely use credentials, such as passwords, in custom components on your Greengrass core devices.
+* [Shadow manager](https://github.com/aws-greengrass/aws-greengrass-shadow-manager) The shadow manager component enables the local shadow service on your core device. The local shadow service allows components to use interprocess communication to [interact with local shadows.](https://docs.aws.amazon.com/greengrass/v2/developerguide/ipc-local-shadows.html)  The shadow manager component manages the storage of local shadow documents, and also handles synchronization of local shadow states with the AWS IoT Device Shadow service.
+
+
+## Resources
 
 ### Tools
 
-_Tools that help you accelerate the development of Greengrass applications._
+The AWS IoT Greengrass team maintains the following tools that you can use to develop, test, and deploy Greengrass components.
 
-- [Placeholder](https://github.com/aws-greengrass/) - This tool helps with the development of greengrass applications.
+* [Greengrass Development Kit CLI](https://docs.aws.amazon.com/greengrass/v2/developerguide/greengrass-tools-cli.html): Use this CLI in your local development environment to kickstart new component development using various component templates. You can use the GDK CLI to build the component locally and publish the component to your AWS account as a private component.
+* [Greengrass CLI](https://docs.aws.amazon.com/greengrass/v2/developerguide/gg-cli.html): Use this CLI on your core device to debug and deploy public/private components. The Greengrass CLI is a component that you can deploy to your core devices to create local deployments, view details about installed components, and explore log files.
 
-## Contributing
+### Documentation
 
-See [CONTRIBUTING](CONTRIBUTING.md#security-issue-notifications) for more information.
+See the [Greengrass V2 developer guide](https://docs.aws.amazon.com/greengrass/v2/developerguide/what-is-iot-greengrass.html) and the [Greengrass V2 API reference](https://docs.aws.amazon.com/greengrass/v2/APIReference/Welcome.html) to learn more about the features that you can leverage to create components and applications for your use case.
 
 ## License
 
-This project is licensed under the Apache-2.0 License.
+This catalog is licensed under the CC BY-SA 4.0 License. 
