@@ -7,9 +7,9 @@ Please read through this document before submitting any issues or pull requests 
 information to effectively respond to your bug report or contribution.
 
 
-## Application/Enhancement Requests
+## Component Requests
 
-We welcome you to use the GitHub issue tracker to suggest applications or enhancements.
+We welcome you to use the GitHub issue tracker to suggest components.
 
 When filing an issue, please check existing open, or recently closed, issues to make sure somebody else hasn't already
 reported the issue. Please try to include as much information as you can.
