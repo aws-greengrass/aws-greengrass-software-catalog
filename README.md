@@ -60,8 +60,8 @@ AWS IoT Greengrass provides and maintains components that you can deploy to your
 
 The AWS IoT Greengrass team maintains the following tools that you can use to develop, test, and deploy Greengrass components.
 
-* [Greengrass Development Kit CLI](https://docs.aws.amazon.com/greengrass/v2/developerguide/greengrass-tools-cli.html): Use this CLI in your local development environment to kickstart new component development using various component templates. You can use the GDK CLI to build the component locally and publish the component to your AWS account as a private component.
-* [Greengrass CLI](https://docs.aws.amazon.com/greengrass/v2/developerguide/gg-cli.html): Use this CLI on your core device to debug and deploy public/private components. The Greengrass CLI is a component that you can deploy to your core devices to create local deployments, view details about installed components, and explore log files.
+* [Greengrass Development Kit CLI](https://github.com/aws-greengrass/aws-greengrass-gdk-cli): Use this [CLI](https://docs.aws.amazon.com/greengrass/v2/developerguide/greengrass-development-kit-cli.html) in your local development environment to kickstart new component development using various component templates. You can use the GDK CLI to build the component locally and publish the component to your AWS account as a private component.
+* [Greengrass CLI](https://github.com/aws-greengrass/aws-greengrass-cli): Use this [CLI](https://docs.aws.amazon.com/greengrass/v2/developerguide/gg-cli.html) on your core device to debug and deploy public/private components. The Greengrass CLI is a component that you can deploy to your core devices to create local deployments, view details about installed components, and explore log files.
 
 ### Documentation
 
