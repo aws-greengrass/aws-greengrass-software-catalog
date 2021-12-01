@@ -32,6 +32,7 @@ Following is a list of Greengrass components.
 * [LoRaWAN](https://github.com/awslabs/aws-greengrass-labs-component-for-the-things-stack-lorawan): This component enables ingestion of data from LoRaWAN-connected, low-power devices so customers can get insights from data and take action locally without connecting to the cloud.
 * [TES Routing to Container](https://github.com/awslabs/aws-greengrass-labs-tes-router): This component configures nftables or iptables on a Greengrass device to be able to use [Token Exchange Service](https://docs.aws.amazon.com/greengrass/v2/developerguide/token-exchange-service-component.html) component with containers.
 * [WebRTC](https://github.com/awslabs/aws-greengrass-labs-webrtc): This component ingests audio and video streams from RTSP cameras connected to the Greengrass core device. And then the component turns the audio and video streams into peer-to-peer communication or relay through Amazon Kinesis Video Streams.
+* [GStreamer for LookoutForVision](https://github.com/awslabs/aws-greengrass-labs-lookoutvision-gstreamer): This component provides a GStreamer plugin that enables you to perform [Amazon Lookout For Vision](https://aws.amazon.com/lookout-for-vision/) anomaly detection in your custom GStreamer pipelines.
 
 ### AWS provided components
 
