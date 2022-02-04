@@ -2,6 +2,7 @@
     "aws-greengrass-labs-database-influxdb": "https://github.com/awslabs/aws-greengrass-labs-database-influxdb/archive/refs/heads/main.zip",
     "aws-greengrass-labs-telemetry-influxdbpublisher": "https://github.com/awslabs/aws-greengrass-labs-telemetry-influxdbpublisher/archive/refs/heads/main.zip",
     "aws-greengrass-labs-dashboard-grafana": "https://github.com/awslabs/aws-greengrass-labs-dashboard-grafana/archive/refs/heads/main.zip",
+    "aws-greengrass-labs-dashboard-influxdb-grafana": "https://github.com/awslabs/aws-greengrass-labs-dashboard-influxdb-grafana/archive/refs/heads/main.zip",
     "aws-greengrass-labs-local-web-server": "https://github.com/awslabs/aws-greengrass-labs-local-web-server/archive/refs/heads/main.zip",
     "aws-greengrass-labs-lookoutvision-gstreamer": "https://github.com/awslabs/aws-greengrass-labs-lookoutvision-gstreamer/archive/refs/tags/v1.0.0.zip"
 }
