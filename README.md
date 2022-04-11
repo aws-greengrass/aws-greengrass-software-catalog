@@ -35,6 +35,7 @@ Following is a list of Greengrass components.
 * [WebRTC](https://github.com/awslabs/aws-greengrass-labs-webrtc): This component ingests audio and video streams from RTSP cameras connected to the Greengrass core device. And then the component turns the audio and video streams into peer-to-peer communication or relay through Amazon Kinesis Video Streams.
 * [GStreamer for LookoutForVision](https://github.com/awslabs/aws-greengrass-labs-lookoutvision-gstreamer): This component provides a GStreamer plugin that enables you to perform [Amazon Lookout For Vision](https://aws.amazon.com/lookout-for-vision/) anomaly detection in your custom GStreamer pipelines.
 * [Secrets Manager client](https://github.com/awslabs/aws-greengrass-labs-secretsmanagerclient): This component provides a CLI tool that can be used by other components needing to retrieve secrets from the SecretManager component in a recipe lifecycle script.
+* [Containerized Secure Tunneling](https://github.com/awslabs/aws-greengrass-labs-containerized-secure-tunneling): This component provides a Docker container for Secure Tunneling with all dependencies and matching libraries in a reusable and customizable recipe without relying on a specific host operating system.
 
 ### AWS provided components
 
