@@ -37,6 +37,10 @@ Following is a list of Greengrass components.
 * [Secrets Manager client](https://github.com/awslabs/aws-greengrass-labs-secretsmanagerclient): This component provides a CLI tool that can be used by other components needing to retrieve secrets from the SecretManager component in a recipe lifecycle script.
 * [Containerized Secure Tunneling](https://github.com/awslabs/aws-greengrass-labs-containerized-secure-tunneling): This component provides a Docker container for Secure Tunneling with all dependencies and matching libraries in a reusable and customizable recipe without relying on a specific host operating system.
 * [S3 file uploader](https://github.com/awslabs/aws-greengrass-labs-s3-file-uploader): This component monitors a directory for new files, upload them to S3 and delete them upon successful upload.
+* [Node-RED](https://github.com/awslabs/aws-greengrass-labs-nodered): This component installs Node-RED on the Greengrass core device using NPM. This component depends on the [Node-RED Auth](https://github.com/awslabs/aws-greengrass-labs-nodered-auth) component which must be explicitly deployed and configured. To deploy Node-RED flows to AWS Greengrass devices running Node-RED you can take advantage of [Node-RED CLI for Greengrass](https://github.com/awslabs/aws-greengrass-labs-node-red-app-cli)
+* [Node-RED Docker](https://github.com/awslabs/aws-greengrass-labs-nodered-docker): This component installs Node-RED on the Greengrass core device using the official Node-RED docker container. This component depends on the [Node-RED Auth](https://github.com/awslabs/aws-greengrass-labs-nodered-auth) component which must be explicitly deployed and configured. To deploy Node-RED flows to AWS Greengrass devices running Node-RED you can take advantage of [Node-RED CLI for Greengrass](https://github.com/awslabs/aws-greengrass-labs-node-red-app-cli)
+* [Node-RED Auth](https://github.com/awslabs/aws-greengrass-labs-nodered-auth): This component configure a user name and password to secure the Node-RED instance running 
+
 
 ### AWS provided components
 
