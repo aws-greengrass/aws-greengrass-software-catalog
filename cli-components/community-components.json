@@ -5,5 +5,6 @@
     "aws-greengrass-labs-dashboard-influxdb-grafana": "https://github.com/awslabs/aws-greengrass-labs-dashboard-influxdb-grafana/archive/refs/heads/main.zip",
     "aws-greengrass-labs-local-web-server": "https://github.com/awslabs/aws-greengrass-labs-local-web-server/archive/refs/heads/main.zip",
     "aws-greengrass-labs-lookoutvision-gstreamer": "https://github.com/awslabs/aws-greengrass-labs-lookoutvision-gstreamer/archive/refs/tags/v1.0.0.zip",
-    "aws-greengrass-labs-containerized-secure-tunneling": "https://github.com/awslabs/aws-greengrass-labs-containerized-secure-tunneling/archive/refs/heads/main.zip"
+    "aws-greengrass-labs-containerized-secure-tunneling": "https://github.com/awslabs/aws-greengrass-labs-containerized-secure-tunneling/archive/refs/heads/main.zip",
+    "aws-greengrass-labs-s3-file-uploader": "https://github.com/awslabs/aws-greengrass-labs-s3-file-uploader/archive/refs/tags/v1.0.0.zip"
 }

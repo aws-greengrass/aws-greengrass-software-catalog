@@ -36,6 +36,7 @@ Following is a list of Greengrass components.
 * [GStreamer for LookoutForVision](https://github.com/awslabs/aws-greengrass-labs-lookoutvision-gstreamer): This component provides a GStreamer plugin that enables you to perform [Amazon Lookout For Vision](https://aws.amazon.com/lookout-for-vision/) anomaly detection in your custom GStreamer pipelines.
 * [Secrets Manager client](https://github.com/awslabs/aws-greengrass-labs-secretsmanagerclient): This component provides a CLI tool that can be used by other components needing to retrieve secrets from the SecretManager component in a recipe lifecycle script.
 * [Containerized Secure Tunneling](https://github.com/awslabs/aws-greengrass-labs-containerized-secure-tunneling): This component provides a Docker container for Secure Tunneling with all dependencies and matching libraries in a reusable and customizable recipe without relying on a specific host operating system.
+* [S3 file uploader](https://github.com/awslabs/aws-greengrass-labs-s3-file-uploader): This component monitors a directory for new files, upload them to S3 and delete them upon successful upload.
 
 ### AWS provided components
 
