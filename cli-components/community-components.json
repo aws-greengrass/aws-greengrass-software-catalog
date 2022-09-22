@@ -9,5 +9,6 @@
     "aws-greengrass-labs-s3-file-uploader": "https://github.com/awslabs/aws-greengrass-labs-s3-file-uploader/archive/refs/tags/v1.0.0.zip",
     "aws-greengrass-labs-nodered-docker": "https://github.com/awslabs/aws-greengrass-labs-nodered-docker/archive/refs/heads/main.zip",
     "aws-greengrass-labs-nodered": "https://github.com/awslabs/aws-greengrass-labs-nodered/archive/refs/heads/main.zip",
-    "aws-greengrass-labs-nodered-auth": "https://github.com/awslabs/aws-greengrass-labs-nodered-auth/archive/refs/heads/main.zip"
+    "aws-greengrass-labs-nodered-auth": "https://github.com/awslabs/aws-greengrass-labs-nodered-auth/archive/refs/heads/main.zip",
+    "aws-greengrass-labs-database-postgresql": "https://github.com/awslabs/aws-greengrass-labs-database-postgresql/releases/download/v1.0.0/aws-greengrass-labs-database-postgresql.zip"
 }
