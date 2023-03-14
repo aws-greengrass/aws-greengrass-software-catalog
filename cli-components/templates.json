@@ -2,5 +2,6 @@
     "HelloWorld-python": "https://github.com/aws-greengrass/aws-greengrass-component-templates/releases/download/v1.0/HelloWorld-python.zip",
     "HelloWorld-java": "https://github.com/aws-greengrass/aws-greengrass-component-templates/releases/download/v1.0/HelloWorld-java.zip",
     "LocalPubSub-python": "https://github.com/aws-greengrass/aws-greengrass-component-templates/releases/download/v1.0/LocalPubSub-python.zip",
-    "LocalPubSub-java": "https://github.com/aws-greengrass/aws-greengrass-component-templates/releases/download/v1.0/LocalPubSub-java.zip"
+    "LocalPubSub-java": "https://github.com/aws-greengrass/aws-greengrass-component-templates/releases/download/v1.0/LocalPubSub-java.zip",
+    "TestingFramework-java": "https://github.com/aws-greengrass/aws-greengrass-component-templates/releases/download/v1.0/TestingFramework-java.zip"
 }
