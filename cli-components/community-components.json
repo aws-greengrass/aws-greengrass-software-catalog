@@ -10,5 +10,6 @@
     "aws-greengrass-labs-nodered-docker": "https://github.com/awslabs/aws-greengrass-labs-nodered-docker/archive/refs/heads/main.zip",
     "aws-greengrass-labs-nodered": "https://github.com/awslabs/aws-greengrass-labs-nodered/archive/refs/heads/main.zip",
     "aws-greengrass-labs-nodered-auth": "https://github.com/awslabs/aws-greengrass-labs-nodered-auth/archive/refs/heads/main.zip",
-    "aws-greengrass-labs-database-postgresql": "https://github.com/awslabs/aws-greengrass-labs-database-postgresql/releases/download/v1.0.0/aws-greengrass-labs-database-postgresql.zip"
+    "aws-greengrass-labs-database-postgresql": "https://github.com/awslabs/aws-greengrass-labs-database-postgresql/releases/download/v1.0.0/aws-greengrass-labs-database-postgresql.zip",
+    "aws-greengrass-labs-openthread-border-router": "https://github.com/awslabs/aws-greengrass-labs-openthread-border-router/archive/refs/heads/main.zip"
 }
