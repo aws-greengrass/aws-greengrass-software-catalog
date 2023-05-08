@@ -41,7 +41,7 @@ Following is a list of Greengrass components.
 * [Node-RED](https://github.com/awslabs/aws-greengrass-labs-nodered): This component installs Node-RED on the Greengrass core device using NPM. This component depends on the [Node-RED Auth](https://github.com/awslabs/aws-greengrass-labs-nodered-auth) component which must be explicitly deployed and configured. To deploy Node-RED flows to AWS Greengrass devices running Node-RED you can take advantage of [Node-RED CLI for Greengrass](https://github.com/awslabs/aws-greengrass-labs-node-red-app-cli)
 * [Node-RED Docker](https://github.com/awslabs/aws-greengrass-labs-nodered-docker): This component installs Node-RED on the Greengrass core device using the official Node-RED docker container. This component depends on the [Node-RED Auth](https://github.com/awslabs/aws-greengrass-labs-nodered-auth) component which must be explicitly deployed and configured. To deploy Node-RED flows to AWS Greengrass devices running Node-RED you can take advantage of [Node-RED CLI for Greengrass](https://github.com/awslabs/aws-greengrass-labs-node-red-app-cli)
 * [Node-RED Auth](https://github.com/awslabs/aws-greengrass-labs-nodered-auth): This component configure a user name and password to secure the Node-RED instance running 
-
+* [OpenThread Border Router](https://github.com/awslabs/aws-greengrass-labs-openthread-border-router): This component deploys the [OpenThread Border Router](https://openthread.io/guides/border-router) Docker container, helping users to compose a Matter device that includes a Thread border router.
 
 ### AWS provided components
 
