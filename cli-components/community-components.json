@@ -14,5 +14,6 @@
     "aws-greengrass-labs-nodered-auth": "https://github.com/awslabs/aws-greengrass-labs-nodered-auth/archive/refs/heads/main.zip",
     "aws-greengrass-labs-database-postgresql": "https://github.com/awslabs/aws-greengrass-labs-database-postgresql/archive/refs/tags/v1.0.1.zip",
     "aws-greengrass-labs-openthread-border-router": "https://github.com/awslabs/aws-greengrass-labs-openthread-border-router/archive/refs/heads/main.zip",
-    "aws-greengrass-labs-certificate-rotator": "https://github.com/awslabs/aws-greengrass-labs-certificate-rotator/archive/refs/heads/main.zip"
+    "aws-greengrass-labs-certificate-rotator": "https://github.com/awslabs/aws-greengrass-labs-certificate-rotator/archive/refs/heads/main.zip",
+    "aws-greengrass-labs-osi-pi-streaming-data-connector": "https://github.com/awslabs/aws-greengrass-labs-osi-pi-streaming-data-connector/archive/refs/heads/main.zip"
 }
