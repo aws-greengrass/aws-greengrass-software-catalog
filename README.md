@@ -43,6 +43,7 @@ Following is a list of Greengrass components.
 * [Node-RED Auth](https://github.com/awslabs/aws-greengrass-labs-nodered-auth): This component configure a user name and password to secure the Node-RED instance running 
 * [OpenThread Border Router](https://github.com/awslabs/aws-greengrass-labs-openthread-border-router): This component deploys the [OpenThread Border Router](https://openthread.io/guides/border-router) Docker container, helping users to compose a Matter device that includes a Thread border router.
 * [Certificate Rotator](https://github.com/awslabs/aws-greengrass-labs-certificate-rotator): This component and companion cloud backend provides a means of rotating the AWS IoT Greengrass core device certificate and private key, across your fleet, at scale.
+* [OSI PI Streaming Data Connector](https://github.com/awslabs/osi-pi-streaming-data-connector): This component provides streaming real-time data ingestion from OSI PI Data Archive to a modern data architecture on AWS with integrations to OSI PI Asset Framework centrally managed over AWS IoT PubSub messaging.
 
 ### AWS provided components
 
