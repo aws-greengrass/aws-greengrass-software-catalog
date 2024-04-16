@@ -45,6 +45,7 @@ Following is a list of Greengrass components.
 * [OpenThread Border Router](https://github.com/awslabs/aws-greengrass-labs-openthread-border-router): This component deploys the [OpenThread Border Router](https://openthread.io/guides/border-router) Docker container, helping users to compose a Matter device that includes a Thread border router.
 * [Certificate Rotator](https://github.com/awslabs/aws-greengrass-labs-certificate-rotator): This component and companion cloud backend provides a means of rotating the AWS IoT Greengrass core device certificate and private key, across your fleet, at scale.
 * [OSI PI Streaming Data Connector](https://github.com/awslabs/osi-pi-streaming-data-connector): This component provides streaming real-time data ingestion from OSI PI Data Archive to a modern data architecture on AWS with integrations to OSI PI Asset Framework centrally managed over AWS IoT PubSub messaging.
+* [S3 File Downloader](https://github.com/awslabs/aws-greengrass-labs-s3-file-downloader): This component downloads files from an Amazon S3 bucket by using Amazon S3 Transfer Manager. It has parallel download and pause/resume features to address unreliable network situations.
 
 ### AWS provided components
 
